@@ -1,0 +1,311 @@
+:root {
+  --color-blue: rgba(0, 0, 255, 1); /* Azul */
+  --color-green: rgba(0, 255, 0, 0.7); /* Verde */
+  --color-gray: #333; /* Gris oscuro o negro */
+  --color-grayligth: rgb(166, 166, 166); /* Gris claro */
+  --color-black: #000; /* Gris oscuro o negro */
+  --color-orange: #f39c12; /* Naranja */
+  --color-white: #fff; /* Blanco */
+  --color-icrem: rgba(249, 228, 183); /* Blanco */
+
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  --lgx: 2.8rem;
+  --lgxx: 3.6rem;
+}
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--color-white);
+}
+body {
+  background-color: var(--color-black);
+}
+header {
+  color: var(--color-blue);
+  background-color: var(--color-grayligth);
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+}
+header h1 {
+  color: var(--color-blue);
+  font-size: var(--lgxx);
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+header h3 {
+  /* color: var(--color-black); */
+  font-size: var(--lg);
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+main section {
+  display: flex;
+  flex-direction: row;
+  /* color: var(--color-primario); */
+  background-color: var(--color-grayligth);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+}
+main .sub-cntd {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin: 1rem 1rem;
+  width: 50%;
+}
+main h2 {
+  font-size: var(--lg);
+  font-weight: 600;
+}
+main h3 {
+  font-size: var(--md);
+  font-weight: 600;
+  padding: 1rem;
+  text-align-last: auto;
+}
+
+.tecnos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tecnos img {
+  margin-top: 3rem;
+  height: 5rem;
+}
+
+.tecnos figcaption {
+  font-size: var(--md);
+  font-weight: 600;
+  padding: 1rem 0rem;
+  text-align-last: auto;
+}
+main .cntd-activities {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--lg);
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+main .fav-section {
+  display: flex;
+  flex-direction: row;
+}
+
+main .fav-section .fav-section-it {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+}
+main .fav-section .fav-section-it .fav-section-it-btns {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.fav-section-it-btns > button {
+  height: 6rem;
+  width: 18rem;
+  border-radius: 1rem;
+  gap: 2px;
+}
+.cntd-activities-lst {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--lg);
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-grayligth);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  justify-content: center;
+}
+footer h3 {
+  color: var(--color-blue);
+  font-size: var(--md);
+  font-weight: 600;
+  padding: 1rem;
+}
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+.tecnos img {
+  transition: transform 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+}
+/* Efecto de escala al hacer hover en HTML */
+#tehc-i-html:hover {
+  transform: scale(3);
+}
+
+/* Efecto de explosion en pedacitos al hacer hover en CSS3 */
+#tehc-i-css3 {
+  /* animation: blink 1s infinite; */
+}
+#tehc-i-css3:hover {
+  transform: scale(3);
+  animation: swing 2s ease-in-out;
+}
+
+/* Efecto de cambio de color al hacer hover en JS */
+#tehc-i-js {
+  transition: transform 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+}
+#tehc-i-js:hover {
+  transform: scale(3) rotate(360deg);
+}
+
+/* Efecto de desenfoque al hacer hover en SQL */
+#tehc-i-sql:hover {
+  animation: heartbeat 1.5s ease-in-out 2;
+}
+
+/* Efecto de traslación al hacer hover en React */
+#tehc-i-react:hover {
+  animation: rotateClockwise 4s linear infinite;
+}
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes swing {
+  0%,
+  100% {
+    transform: scale(3) rotate(0deg);
+  }
+  33% {
+    transform: scale(3) rotate(20deg);
+  }
+  66% {
+    transform: scale(3) rotate(-20deg);
+  }
+}
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.emogis {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.form-act input,
+textarea {
+  padding: 1rem;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  font-size: var(--lg);
+  font-weight: 600;
+}
+
+.form-act button {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: var(--lg);
+  font-weight: 600;
+}
+.form-act button:hover {
+  border: 1px solid blue;
+  color: blue;
+  background-color: chartreuse;
+  font-size: var(--lg);
+}
+.form-act button:active {
+  transform: scale(0.7);
+  background-color: green;
+}
+.trj-activ-itms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0px solid blue;
+  width: 95%;
+}
+.boxtar {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 20px); /* Establece el ancho deseado para cada tarjeta */
+  margin: 10px; /* Agrega márgenes entre las tarjetas */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+  border: 1px solid #ddd; /* Añade un borde para separar las tarjetas */
+  padding: 10px; /* Añade un relleno interno a las tarjetas si es necesario */
+  border-radius: 5px;
+}
+.boxtar img {
+  height: 60%;
+  width: 95%;
+}
+.boxtardel{
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  align-self: center;
+  align-items: center;
+  height: 30px;
+  width: 50px;
+
+}
+.boxtardel img{
+  height: 20px;
+}
+.btnTrjDel{
+  height: 40px;
+  border-radius: 10px;
+}
+.btnTrjDel:hover{
+  cursor: pointer;
+}
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* Media query para pantallas con un ancho igual o menor a 800px */
+@media (max-width: 600px) {
+  main section .cntd-resp {
+    display: flex;
+    flex-direction: row;
+  }
+}

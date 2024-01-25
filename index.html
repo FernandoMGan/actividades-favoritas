@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soy Henry - Homework - Modulo 01 - Fernando Gan - PT19A</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/index.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <br />
+    <header>
+      <h1>Fernando Martin Gan - PT19A</h1>
+      <h3>Mi pagina web, para modulo 1 de Soy Henry</h3>
+    </header>
+    <main>
+      <section class="cntd-resp">
+        <article class="sub-cntd">
+          <h2>¿ Quien Es Fernando Martin Gan ?</h2>
+          <hr />
+          <h3>
+            Desarrollador, creativo, apasionado por la simplicidad, la
+            curiosidad y la constante mejora. Cocino ideas, estudio
+            oportunidades y saboreo desafíos bien pagos. Profesional versátil
+            que encuentra la armonía entre trabajo, estudio y la búsqueda
+            incansable del éxito. <br />
+          </h3>
+          <h1 class="emogis">💼📚🍽️</h1>
+        </article>
+        <article class="sub-cntd">
+          <h2>Mis Tecnologias</h2>
+          <hr />
+          <article class="tecnos tecnos-img-knows">
+            <div>
+              <img
+                src="./assets/techs/HTML5.png"
+                id="tehc-i-html"
+                alt="Html"
+                title="Html"
+              />
+              <p><figcaption>HTML 5</figcaption></p>
+            </div>
+            <div>
+              <img
+                src="./assets/techs/CSS3.png"
+                id="tehc-i-css3"
+                alt="Css"
+                title="Css"
+              />
+              <p><figcaption>CSS 3</figcaption></p>
+            </div>
+            <div>
+              <img
+                src="./assets/techs/js.png"
+                id="tehc-i-js"
+                alt="Js"
+                title="Js"
+              />
+              <p><figcaption>Js</figcaption></p>
+            </div>
+            <div>
+              <img
+                src="./assets/techs/SQL_Server.png"
+                id="tehc-i-sql"
+                alt="Sql"
+                title="Sql Server"
+              />
+              <p><figcaption>SQL</figcaption></p>
+            </div>
+            <div>
+              <img
+                src="./assets/techs/React.png"
+                id="tehc-i-react"
+                alt="React"
+                title="React"
+              />
+              <p><figcaption>React</figcaption></p>
+            </div>
+          </article>
+        </article>
+      </section>
+      <section class="cntd-activities">
+        <article>
+          <h2>Gestion de actividades favoritas</h2>
+          <hr />
+        </article>
+        <article class="form-act">
+          <form action="">
+            <div class="fav-section">
+              <div class="fav-section-it">
+                <input
+                  type="text"
+                  id="titulo"
+                  name="titulo"
+                  placeholder="Ingrese una nueva actividad"
+                  required
+                />
+                <br />
+                <textarea
+                  id="descripcion"
+                  name="descripcion"
+                  rows="4"
+                  required
+                  placeholder="Escribe tu mensaje aquí..."
+                ></textarea>
+              </div>
+              <div class="fav-section-it">
+                <!-- <label for="url">URL de la imagen de la actividad</label> -->
+                <input
+                  type="text"
+                  id="url"
+                  name="url"
+                  value="https://picsum.photos/200/200"
+                  placeholder="URL de la imagen"
+                  required
+                />
+                <br />
+                <div class="fav-section-it-btns">
+                  <button
+                    type="submit"
+                    name="btnAdd"
+                    class="btns-activities"
+                    id="btnAdd"
+                  >
+                    Agregar Actividad
+                  </button>
+                  <button
+                    type="button"
+                    name="btnPrint"
+                    class="btns-activities"
+                    id="btnPrint"
+                  >
+                    Impresion Actividades
+                  </button>
+                  <button
+                    type="reset"
+                    name="btnClean"
+                    class="btns-activities"
+                    id="btnClean"
+                  >
+                    Limpiar Formulario
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section class="cntd-activities-lst">
+        <article>
+          <h2>Mis actividades favoritas</h2>
+          <hr />
+        </article>
+        <article>
+          <div class="trj-activ-itms">
+            <!-- <div class="boxtar">
+              <p>Cuid</p>
+              <img
+                src="https://picsum.photos/200/200"
+                alt="Imagen de actividad de Cuidado de Pets"
+              />
+              <br />
+              <article>dd</article>
+              <br />
+              <button class="boxtardel">
+                <img src="./assets/btns/trash.svg" alt="icono trash" />
+              </button>
+            </div> -->
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>
+        <span
+          >Todos los derechos reservados a Bpo Change (www.bpochange.com.ar) de
+          Fernando Gan</span
+        >
+      </h3>
+    </footer>
+    <br />
+    <script>
+      // Crear variables para utilizar
+      const repository = new Repository();
+    </script>
+  </body>
+</html>

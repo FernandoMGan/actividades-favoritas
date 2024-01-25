@@ -1,0 +1,11 @@
+…or create a new repository on the command line
+
+git init
+git add .
+git commit -m "Actividades Favoritas (Proy Henry)"
+git branch -M main
+git push main https://github.com/FernandoMGan/actividades-favoritas.git
+
+
+
+git remote add origin https://github.com/FernandoMGan/actividades-favoritas.git
